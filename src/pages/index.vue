@@ -47,6 +47,7 @@
         console.log(this.stime);
         xmlhttp = new XMLHttpRequest();
         xmlhttp.onreadystatechange = function () {
+          console.log(state);
           if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
             state = eval('('+xmlhttp.responseText+')')
           }else{
