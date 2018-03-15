@@ -50,7 +50,7 @@
           if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
             state = eval('('+xmlhttp.responseText+')')
           }else{
-            //处理相关错误
+            //处理错误
           }
         }
         xmlhttp.open('GET','http://'+this.$store.state.serverIp+'/json/users.php?date='+this.stime,false);
