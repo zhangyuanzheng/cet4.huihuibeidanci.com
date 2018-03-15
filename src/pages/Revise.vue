@@ -79,7 +79,7 @@
         xmlhttp = new XMLHttpRequest();
         xmlhttp.onreadystatechange = function () {
 
-          //  console.log(xmlhttp.readyState,xmlhttp.status,x  );
+          //  console.log(xmlhttp.readyState,xmlhttp.status );
           if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
             state = eval('('+ xmlhttp.responseText +')');
            // console.log(state);
