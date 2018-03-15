@@ -1,10 +1,11 @@
 <?php
 header('Access-Control-Allow-Origin:*');//允许所有来源访问
 header('Access-Control-Allow-Method:POST,GET');//允许访问的方式 　　
+header('Access-Control-Allow-Headers:x-requested-with,content-type');
 ?>
 {
-  serverIp:'127.0.0.1',
-  newbi:'0',
+  serverIp:'192.168.1.102',
+  newbi:'1',
   examTime:'',
   leftMenuShow:false,
   open_id:'DWIHFUHUA213D02',
@@ -16,5 +17,7 @@ header('Access-Control-Allow-Method:POST,GET');//允许访问的方式 　　
   onday:'20',
   memory:'43',
   xp:'200',
-  notice:'1'
+  notice:'1',
+  percent:'35',
+  readReviseRule:0
 }
