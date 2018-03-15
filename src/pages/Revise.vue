@@ -14,9 +14,9 @@
       <div class="padding-lg"> </div>
       <div id="sounddiv">
         <img src="../assets/images/sound.png" id="soundlogo" alt="">
-        <!--<audio id="bgMusic" autoplay="true">-->
-          <!--<source :src="nsrc" type="audio/mp3">-->
-        <!--</audio>-->
+        <audio id="bgMusic" autoplay="true">
+          <source :src="nsrc" type="audio/mp3">
+        </audio>
       </div>
     </div>
     <bottomBtn @click.native="check" btnValue="下一题" color="green" class="bottomBtn"></bottomBtn>
@@ -38,8 +38,8 @@
         meaning:'n.拉链',
         formWrite:'',
         xpshow:false,
-        num:5
-       // nsrc:'http://192.168.1.102/sound/zip.mp3'
+        num:5,
+        nsrc:'http://192.168.1.102/sound/zip.mp3'
       }
     },
     mounted(){
@@ -93,7 +93,7 @@
         xmlhttp.send();
         this.form = state.form;
         this.meaning = state.meaning;
-       // this.nsrc= 'http://192.168.1.102/sound/'+state.form+'.mp3'
+        this.nsrc= 'http://192.168.1.102/sound/'+state.form+'.mp3'
         this.num--;
 
         this.num<=0 && this.$router.push({path:'/index'});

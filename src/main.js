@@ -16,6 +16,7 @@ import CreatSuccess from './pages/CreatSuccess.vue'
 import ReviseBegin from './pages/ReviseBegin.vue'
 import Revise from './pages/Revise.vue'
 import Error from './pages/Error.vue'
+import Plan from './pages/Plan.vue'
 
 Vue.config.productionTip = false
 const router = new VueRouter({
@@ -30,6 +31,7 @@ const router = new VueRouter({
     {path:'/CreatSuccess',component:CreatSuccess},
     {path:'/ReviseBegin',component:ReviseBegin},
     {path:'/Revise',component:Revise},
+    {path:'/Plan',component:Plan},
     {path:'*',component:Error},
   ]
 });

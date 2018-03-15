@@ -4,10 +4,10 @@
     <leftMenu v-show="this.$store.state.leftMenuShow"></leftMenu>
     <face></face>
     <div class="more"></div>
-    <speed class="animated pulse"></speed>
+    <speed class="animated pulse" @click.native="go([$router,'Plan'])"></speed>
 
     <div id="btn">
-      <div id="btn_left" class="btnStyle">继续计划</div>
+      <div id="btn_left" class="btnStyle" @click="go([$router,'Plan'])">继续计划</div>
       <div id="btn_right" class="btnStyle" @click="go([$router,'ReviseBegin'])" >复习加经验</div>
     </div>
   </div>
