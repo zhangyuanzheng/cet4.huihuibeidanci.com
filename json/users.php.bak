@@ -1,0 +1,20 @@
+<?php
+header('Access-Control-Allow-Origin:*');//允许所有来源访问
+header('Access-Control-Allow-Method:POST,GET');//允许访问的方式 　　
+?>
+{
+  serverIp:'127.0.0.1',
+  newbi:'1',
+  examTime:'',
+  leftMenuShow:false,
+  open_id:'DWIHFUHUA213D02',
+  headimgurl:'https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/home/img/qrcode/zbios_efde696.png',
+  name:'zyz',
+  nickname:'zyz',
+  sex:'1',
+  examTime:'2016-06-17',
+  onday:'20',
+  memory:'43',
+  xp:'200',
+  notice:'1'
+}
